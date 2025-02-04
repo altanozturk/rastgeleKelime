@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sessiz Sinema</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Karşılama Ekranı -->
+    <div id="welcomeScreen" class="welcome-screen">
+        <div class="welcome-content">
+            <h1>Sessiz Sinema</h1>
+            <p>Takımınızla birlikte eğlenceli bir kelime tahmin oyunu!</p>
+            <button id="welcomeStartButton" class="game-button">Oyunu Başlat</button>
+        </div>
+    </div>
+
+    <!-- Takım İsimleri Modal -->
+    <div id="teamNamesModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <h2>Oyun Ayarları</h2>
+            <div class="team-input">
+                <label for="teamAName">1. Takım İsmi:</label>
+                <input type="text" id="teamAName">
+            </div>
+            <div class="team-input">
+                <label for="teamBName">2. Takım İsmi:</label>
+                <input type="text" id="teamBName">
+            </div>
+            <div class="time-selection">
+                <h3>Süre Seçin:</h3>
+                <div class="time-options">
+                    <button class="time-option" data-seconds="30">30 Saniye</button>
+                    <button class="time-option" data-seconds="60">1 Dakika</button>
+                    <button class="time-option" data-seconds="120">2 Dakika</button>
+                    <button class="time-option" data-seconds="180">3 Dakika</button>
+                </div>
+            </div>
+            <div class="rounds-selection">
+                <h3>Kaç El Oynanacak:</h3>
+                <div class="rounds-input">
+                    <input type="number" id="roundsInput" min="1" max="50" value="3" placeholder="El sayısı">
+                </div>
+            </div>
+            <button id="startGameButton" class="game-button">Oyunu Başlat</button>
+        </div>
+    </div>
+
+    <!-- Ana Oyun Container (başlangıçta gizli) -->
+    <div class="container" style="display: none;">
+        <div class="scores-container">
+            <div class="team-score">
+                <h3 id="teamALabel">A Takımı</h3>
+                <h2><span id="scoreA">0</span></h2>
+            </div>
+            <div class="timer-container">
+                <h3>Süre</h3>
+                <h2><span id="timer">00:15</span></h2>
+            </div>
+            <div class="team-score">
+                <h3 id="teamBLabel">B Takımı</h3>
+                <h2><span id="scoreB">0</span></h2>
+            </div>
+        </div>
+        <div class="current-team">
+            <h3>Sıra: <span id="currentTeamDisplay">A Takımı</span></h3>
+        </div>
+        <div class="word-container">
+            <h1 id="word">Oyuna Başla!</h1>
+        </div>
+        <div class="button-container" id="buttonContainer">
+            <button id="startButton" class="game-button">Başla</button>
+            <button id="passButton" class="game-button" style="display: none;">Pas</button>
+            <button id="correctButton" class="game-button" style="display: none;">Doğru</button>
+            <button id="restartButton" class="game-button" style="display: none;">Yeniden Başla</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

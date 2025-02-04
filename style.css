@@ -1,0 +1,614 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #2d3436;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    min-width: 320px;
+}
+
+.score-container {
+    margin-bottom: 2.5rem;
+    color: #6c5ce7;
+}
+
+.word-container {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.game-button {
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 160px;
+}
+
+#passButton {
+    background-color: #ff6b6b;
+    color: white;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+#correctButton {
+    background-color: #51cf66;
+    color: white;
+    box-shadow: 0 4px 15px rgba(81, 207, 102, 0.3);
+}
+
+#passButton:hover {
+    background-color: #ff5252;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+}
+
+#correctButton:hover {
+    background-color: #40c057;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(81, 207, 102, 0.4);
+}
+
+#passButton:active, #correctButton:active {
+    transform: translateY(0);
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #2d3436;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+#score {
+    color: #6c5ce7;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+/* Animasyonlar */
+@keyframes fadeIn {
+    from { 
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.word-container {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Mobil cihazlar için responsive tasarım */
+@media (max-width: 480px) {
+    .container {
+        padding: 2rem;
+        margin: 1rem;
+    }
+
+    .game-button {
+        padding: 0.8rem 1.8rem;
+        font-size: 1rem;
+        width: 130px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+#startButton {
+    background-color: #6c5ce7;
+    color: white;
+    box-shadow: 0 4px 15px rgba(108, 92, 231, 0.3);
+}
+
+#startButton:hover {
+    background-color: #5f3dc4;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(108, 92, 231, 0.4);
+}
+
+.scores-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    gap: 1.5rem;
+}
+
+.team-score, .timer-container {
+    text-align: center;
+    padding: 1rem 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 160px;
+    flex: none;
+}
+
+.team-score h3 {
+    color: #2d3436;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.team-score h2 {
+    color: #6c5ce7;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.timer-container {
+    width: 140px;
+}
+
+.timer-container h2 {
+    color: #e17055;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.timer-container h3 {
+    color: #2d3436;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.current-team {
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.current-team h3 {
+    color: #2d3436;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+#currentTeamDisplay {
+    color: #6c5ce7;
+    font-weight: bold;
+}
+
+/* Mobil için timer düzenlemesi */
+@media (max-width: 480px) {
+    .team-score, .timer-container {
+        width: 120px;
+        padding: 0.8rem 1rem;
+    }
+
+    .timer-container {
+        width: 100px;
+    }
+
+    .team-score h2, .timer-container h2 {
+        min-height: 36px;
+        font-size: 1.5rem;
+    }
+
+    .scores-container {
+        gap: 0.8rem;
+    }
+
+    .team-score h3 {
+        font-size: 1rem;
+    }
+
+    .team-score h2 {
+        font-size: 1.5rem;
+    }
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: modalFadeIn 0.3s ease-out;
+    padding: 1.5rem 0;
+}
+
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 1.5rem;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    margin: 0.5rem 0;
+}
+
+.modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: rgba(108, 92, 231, 0.5);
+    border-radius: 4px;
+}
+
+.modal-content h2 {
+    color: #2d3436;
+    margin-bottom: 0.6rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.team-input {
+    margin: 0.6rem 0;
+    text-align: center;
+}
+
+.team-input label {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.team-input input {
+    width: 100%;
+    padding: 0.6rem;
+    border: 2px solid rgba(108, 92, 231, 0.2);
+    border-radius: 12px;  /* Butonlarla aynı border-radius */
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #2d3436;
+    font-weight: 500;
+}
+
+.team-input input:focus {
+    outline: none;
+    border-color: #51cf66;  /* Yeşil vurgu */
+    box-shadow: 0 0 15px rgba(81, 207, 102, 0.2);
+    transform: translateY(-2px);
+}
+
+.team-input input::placeholder {
+    color: #b2bec3;
+}
+
+#startGameButton {
+    background-color: #51cf66;
+    color: white;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(81, 207, 102, 0.3);
+    margin-top: 0.6rem;
+    margin-bottom: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+#startGameButton:hover {
+    background-color: #40c057;
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 6px 20px rgba(81, 207, 102, 0.4);
+}
+
+#startGameButton:active {
+    transform: translateY(-1px);
+}
+
+/* Mobil için düzenlemeler */
+@media (max-width: 480px) {
+    .modal-content {
+        max-height: 80vh;
+        padding: 1.5rem;
+    }
+
+    .modal-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .team-input label {
+        font-size: 1.1rem;
+    }
+
+    .team-input input {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+
+    #startGameButton {
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+}
+
+.shake {
+    animation: shake 0.3s ease-in-out;
+}
+
+.welcome-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    z-index: 2000;
+}
+
+.welcome-content {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 3rem;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    animation: welcomeFadeIn 0.5s ease-out;
+}
+
+.welcome-content h1 {
+    color: #2d3436;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-content p {
+    color: #636e72;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+#welcomeStartButton {
+    background-color: #51cf66;
+    color: white;
+    padding: 1.2rem 2.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(81, 207, 102, 0.3);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#welcomeStartButton:hover {
+    background-color: #40c057;
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 6px 20px rgba(81, 207, 102, 0.4);
+}
+
+@keyframes welcomeFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobil için düzenlemeler */
+@media (max-width: 480px) {
+    .welcome-content {
+        padding: 2rem;
+    }
+
+    .welcome-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .welcome-content p {
+        font-size: 1.1rem;
+    }
+
+    #welcomeStartButton {
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+    }
+}
+
+.time-selection {
+    margin: 0.6rem 0;
+    text-align: center;
+}
+
+.time-selection h3 {
+    color: #2d3436;
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+}
+
+.time-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.time-option {
+    padding: 0.5rem;
+    border: 2px solid rgba(108, 92, 231, 0.2);
+    border-radius: 10px;
+    background-color: white;
+    color: #2d3436;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.time-option:hover {
+    background-color: rgba(108, 92, 231, 0.1);
+    transform: translateY(-2px);
+}
+
+.time-option.selected {
+    background-color: #6c5ce7;
+    color: white;
+    border-color: #6c5ce7;
+    box-shadow: 0 4px 15px rgba(108, 92, 231, 0.3);
+}
+
+@media (max-width: 480px) {
+    .time-options {
+        grid-template-columns: 1fr;
+    }
+}
+
+.rounds-selection {
+    margin: 0.6rem 0;
+    text-align: center;
+}
+
+.rounds-selection h3 {
+    color: #2d3436;
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+}
+
+.rounds-input {
+    margin: 0 auto;
+    max-width: 150px;
+}
+
+.rounds-input input {
+    width: 100%;
+    padding: 0.6rem;
+    border: 2px solid rgba(108, 92, 231, 0.2);
+    border-radius: 12px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #2d3436;
+    font-weight: 500;
+}
+
+.rounds-input input:focus {
+    outline: none;
+    border-color: #51cf66;
+    box-shadow: 0 0 15px rgba(81, 207, 102, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Input'taki ok butonlarını özelleştir */
+.rounds-input input::-webkit-outer-spin-button,
+.rounds-input input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.rounds-input input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+/* Mobil için düzenleme */
+@media (max-width: 480px) {
+    .rounds-input {
+        max-width: 100px;
+    }
+}
+
+#restartButton {
+    background-color: #51cf66;  /* Yeşil renk */
+    color: white;
+    box-shadow: 0 4px 15px rgba(81, 207, 102, 0.3);  /* Yeşil gölge */
+    display: none;
+}
+
+#restartButton:hover {
+    background-color: #40c057;  /* Hover'da daha koyu yeşil */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(81, 207, 102, 0.4);  /* Daha belirgin yeşil gölge */
+} 

@@ -1,0 +1,492 @@
+{
+    "isimler": {
+        "doğa": [
+            "ağaç", "orman", "deniz", "göl", "nehir", "dağ", "tepe", "vadi", "çiçek", "yaprak",
+            "bulut", "yağmur", "kar", "güneş", "ay", "yıldız", "gökyüzü", "toprak", "taş", "kum",
+            "okyanus", "volkan", "şelale", "ada", "plaj", "sahil", "çöl", "buzul", "mağara", "kanyon",
+            "ova", "yayla", "orman", "çimen", "çalı", "fırtına", "rüzgar", "kasırga", "deprem", "tsunami",
+            "yıldırım", "şimşek", "gök gürültüsü", "sis", "çığ", "sel", "dalga", "gelgit", "mercan",
+            "fosil", "kristal", "granit", "mermer", "kireç", "kömür", "petrol", "maden", "mineral",
+            "lavanta", "papatya", "gül", "lale", "orkide", "menekşe", "zambak", "karanfil", "sümbül",
+            "nilüfer", "akasya", "çam", "meşe", "çınar", "söğüt", "kavak", "palmiye", "zeytin", "incir",
+            "manolya", "bambu", "sarmaşık", "eğrelti", "yosun", "küf", "mantar", "liken", "alg",
+            "mercan", "sedir", "ardıç", "kayın", "ıhlamur", "akçaağaç", "kestane", "ceviz", "fındık"
+        ],
+        "hayvanlar": [
+            "kedi", "köpek", "kuş", "balık", "aslan", "kaplan", "fil", "zürafa", "maymun", "tavşan",
+            "kaplumbağa", "kartal", "baykuş", "karga", "serçe", "penguen", "ayı", "kurt", "tilki",
+            "leopar", "çita", "jaguar", "puma", "panda", "koala", "kanguru", "zebra", "antilop", "ceylan",
+            "geyik", "gergedan", "hipopotam", "timsah", "iguana", "kertenkele", "yılan", "boa", "piton",
+            "anaconda", "kobra", "engerek", "çıngıraklı yılan", "kurbağa", "semender", "bukalemun",
+            "papağan", "flamingo", "pelikan", "martı", "albatros", "turna", "leylek", "şahin", "doğan",
+            "atmaca", "akbaba", "kondor", "saka", "bülbül", "kanarya", "muhabbet kuşu", "güvercin",
+            "keklik", "sülün", "tavuk", "horoz", "hindi", "ördek", "kaz", "deve", "lama", "alpaka",
+            "mors", "fok", "denizaslanı", "yunus", "balina", "katil balina", "köpekbalığı", "vatoz",
+            "ıstakoz", "yengeç", "karides", "ahtapot", "mürekkep balığı", "denizanası", "denizyıldızı",
+            "kirpi", "gelincik", "sansar", "porsuk", "rakun", "kokarca", "kunduz", "sincap", "hamster",
+            "fare", "sıçan", "köstebek", "yarasa", "karınca", "arı", "eşekarısı", "yaban arısı",
+            "kelebek", "güve", "uğur böceği", "ateş böceği", "çekirge", "cırcır böceği", "örümcek",
+            "akrep", "kırkayak", "tırtıl", "salyangoz", "solucan", "midye", "istiridye", "keçi",
+            "koyun", "inek", "boğa", "manda", "eşek", "katır", "at", "tay", "zebra"
+        ],
+        "eşyalar": [
+            "masa", "sandalye", "dolap", "yatak", "koltuk", "televizyon", "bilgisayar", "telefon",
+            "kitap", "kalem", "defter", "çanta", "anahtar", "gözlük", "saat", "lamba", "bardak",
+            "tabak", "çatal", "kaşık", "bıçak", "tencere", "tava", "fırın", "buzdolabı", "çamaşır makinesi",
+            "bulaşık makinesi", "ütü", "süpürge", "paspas", "havlu", "sabun", "diş fırçası", "tarak",
+            "ayna", "perde", "halı", "kilim", "battaniye", "yastık", "yorgan", "çarşaf", "nevresim",
+            "kanepe", "sehpa", "vitrin", "gardırop", "raf", "kitaplık", "çekmece", "valiz", "terlik",
+            "şemsiye", "çaydanlık", "demlik", "fincan", "vazo", "saksı", "resim çerçevesi",
+            "kumanda", "şarj aleti", "klavye", "fare", "monitör", "yazıcı", "hoparlör", "mikrofon",
+            "kulaklık", "kamera", "projeksiyor", "hesap makinesi", "termometre", "takvim", "ajanda",
+            "zarf", "kağıt", "makas", "yapıştırıcı", "bant", "zımba", "delgeç", "ataş", "silgi",
+            "kalemtıraş", "cetvel", "pergel", "dikiş makinesi", "iğne", "iplik", "düğme", "fermuar",
+            "kemer", "cüzdan", "el çantası", "sırt çantası", "bavul", "torba", "poşet", "sepet"
+        ],
+        "yiyecekler": [
+            "ekmek", "süt", "peynir", "yoğurt", "elma", "armut", "muz", "portakal", "üzüm",
+            "çilek", "kiraz", "karpuz", "domates", "salatalık", "patates", "havuç", "pirinç",
+            "makarna", "şehriye", "bulgur", "mercimek", "nohut", "fasulye", "barbunya", "börülce",
+            "mısır", "bezelye", "ıspanak", "pırasa", "lahana", "karnabahar", "brokoli", "patlıcan",
+            "biber", "kabak", "soğan", "sarımsak", "mantar", "marul", "roka", "maydanoz", "dereotu",
+            "fesleğen", "nane", "kekik", "tarçın", "karabiber", "kimyon", "zencefil", "zerdeçal",
+            "bal", "reçel", "pekmez", "tahin", "zeytin", "tereyağı", "margarin", "sıvı yağ", "sirke",
+            "limon", "mandalina", "greyfurt", "ananas", "kivi", "şeftali", "kayısı", "erik", "dut",
+            "incir", "hurma", "nar", "ayva", "böğürtlen", "ahududu", "kuşburnu", "vişne", "kavun",
+            "badem", "fındık", "ceviz", "fıstık", "kestane", "leblebi", "kuruyemiş", "çekirdek",
+            "çikolata", "şeker", "lokum", "helva", "baklava", "kadayıf", "künefe", "dondurma",
+            "pasta", "kek", "kurabiye", "börek", "poğaça", "simit", "pide", "lahmacun", "pizza"
+        ],
+        "meslekler": [
+            "öğretmen", "doktor", "mühendis", "avukat", "hemşire", "polis", "itfaiyeci", "aşçı",
+            "garson", "şoför", "pilot", "hostes", "kaptan", "futbolcu", "sporcu", "oyuncu", "yazar",
+            "gazeteci", "fotoğrafçı", "ressam", "müzisyen", "dansçı", "terzi", "kuaför", "berber",
+            "marangoz", "tamirci", "elektrikçi", "tesisatçı", "boyacı", "inşaatçı", "mimar", "bahçıvan",
+            "çiftçi", "veteriner", "eczacı", "diş hekimi", "psikolog", "muhasebeci", "bankacı",
+            "pazarlamacı", "satış temsilcisi", "sekreter", "yönetici", "müdür", "akademisyen",
+            "bilim insanı", "araştırmacı", "laborant", "teknisyen", "grafiker", "tasarımcı"
+        ],
+        "renkler": [
+            "kırmızı", "mavi", "yeşil", "sarı", "siyah", "beyaz", "mor", "turuncu", "pembe", "kahverengi",
+            "gri", "lacivert", "turkuaz", "bej", "bordo", "eflatun", "lila", "krem", "gümüş", "altın",
+            "bronz", "zümrüt", "yakut", "safir", "ametist", "akuamarin", "mercan", "fildişi", "kestane",
+            "haki", "indigo", "magenta", "olive", "şeftali", "lavanta", "amber", "kobalt", "okyanus",
+            "çivit", "bakır", "füme", "petrol", "vizon", "karamel", "kiremit"
+        ],
+        "sayılar": [
+            "sıfır", "bir", "iki", "üç", "dört", "beş", "altı", "yedi", "sekiz", "dokuz", "on",
+            "yirmi", "otuz", "kırk", "elli", "altmış", "yetmiş", "seksen", "doksan", "yüz",
+            "bin", "milyon", "milyar", "trilyon", "birinci", "ikinci", "üçüncü", "dördüncü",
+            "beşinci", "onuncu", "yüzüncü", "bininci", "çeyrek", "yarım", "tam", "tek", "çift"
+        ],
+        "zaman": [
+            "saniye", "dakika", "saat", "gün", "hafta", "ay", "yıl", "asır", "dönem", "çağ",
+            "sabah", "öğle", "akşam", "gece", "tan", "şafak", "gündüz", "alacakaranlık",
+            "pazartesi", "salı", "çarşamba", "perşembe", "cuma", "cumartesi", "pazar",
+            "ocak", "şubat", "mart", "nisan", "mayıs", "haziran", "temmuz", "ağustos",
+            "eylül", "ekim", "kasım", "aralık", "bahar", "yaz", "sonbahar", "kış",
+            "geçmiş", "gelecek", "şimdi", "dün", "bugün", "yarın", "demin", "birazdan"
+        ],
+        "akrabalık": [
+            "anne", "baba", "kardeş", "abla", "ağabey", "dede", "nine", "büyükanne", "büyükbaba",
+            "teyze", "hala", "amca", "dayı", "kuzen", "yeğen", "enişte", "yenge", "gelin", "damat",
+            "kayınvalide", "kayınpeder", "kayınbirader", "baldız", "görümce", "bacanak", "elti",
+            "torun", "çocuk", "oğul", "kız", "bebek", "ikiz", "üvey anne", "üvey baba", "üvey kardeş"
+        ],
+        "vücut": [
+            "baş", "saç", "alın", "kaş", "göz", "kirpik", "burun", "ağız", "dudak", "dil", "diş",
+            "çene", "yanak", "kulak", "boyun", "omuz", "kol", "dirsek", "bilek", "el", "parmak",
+            "tırnak", "göğüs", "sırt", "bel", "karın", "kalça", "bacak", "diz", "ayak", "topuk",
+            "kemik", "kas", "damar", "sinir", "beyin", "kalp", "akciğer", "mide", "karaciğer", "böbrek",
+            "bağırsak", "deri", "kıkırdak", "eklem", "omurga", "kafatası", "kaburgalar"
+        ],
+        "duygular": [
+            "mutluluk", "sevinç", "neşe", "coşku", "heyecan", "aşk", "sevgi", "şefkat", "merhamet",
+            "üzüntü", "keder", "acı", "özlem", "hasret", "yalnızlık", "korku", "endişe", "kaygı",
+            "öfke", "kızgınlık", "nefret", "kin", "kıskançlık", "gurur", "kibir", "utanç", "suçluluk",
+            "pişmanlık", "merak", "şaşkınlık", "hayret", "umut", "umutsuzluk", "güven", "güvensizlik",
+            "huzur", "rahatlık", "stres", "sıkıntı", "can sıkıntısı", "tatmin", "memnuniyet"
+        ],
+        "hava_durumu": [
+            "güneşli", "bulutlu", "yağmurlu", "karlı", "rüzgarlı", "fırtınalı", "sisli", "puslu",
+            "açık", "kapalı", "parçalı bulutlu", "sağanak", "dolu", "kırağı", "don", "ayaz", "nem",
+            "rutubet", "bunaltıcı", "boğucu", "serin", "ılık", "soğuk", "sıcak", "tropik", "kutup",
+            "kasırga", "hortum", "tayfun", "tsunami", "sel", "çığ", "tipi", "boran", "meltem"
+        ],
+        "yönler": [
+            "kuzey", "güney", "doğu", "batı", "kuzeydoğu", "kuzeybatı", "güneydoğu", "güneybatı",
+            "sağ", "sol", "ön", "arka", "iç", "dış", "yukarı", "aşağı", "ileri", "geri", "çapraz",
+            "yatay", "dikey", "paralel", "karşı", "yan", "orta", "merkez", "kenar", "köşe"
+        ],
+        "spor": [
+            "futbol", "basketbol", "voleybol", "tenis", "yüzme", "atletizm", "jimnastik", "boks",
+            "güreş", "judo", "karate", "tekvando", "masa tenisi", "badminton", "golf", "beyzbol",
+            "hokey", "rugby", "kriket", "bilardo", "bowling", "kayak", "snowboard", "sörf", "yelken",
+            "kano", "kürek", "dağcılık", "tırmanış", "paraşüt", "yamaç paraşütü", "dalış", "koşu",
+            "maraton", "triatlon", "bisiklet", "motokros", "formula", "ralli", "halter", "eskrim",
+            "okçuluk", "atıcılık", "binicilik", "polo", "curling", "lakros", "squash", "parkur"
+        ],
+        "müzik": [
+            "piyano", "gitar", "keman", "flüt", "davul", "bateri", "saksafon", "trompet", "klarnet",
+            "akordeon", "org", "bağlama", "ud", "kanun", "ney", "zurna", "kemençe", "tambur", "def",
+            "bendir", "darbuka", "zil", "marakas", "kastanyet", "tef", "melodika", "mandolin", "ukulele",
+            "banjo", "kontrbas", "viyola", "viyolonsel", "obua", "fagot", "trombon", "tuba", "arp",
+            "metronom", "nota", "beste", "melodi", "ritim", "armoni", "senfoni", "konçerto", "sonat"
+        ],
+        "sanat": [
+            "resim", "heykel", "seramik", "ebru", "hat", "tezhip", "minyatür", "gravür", "litografi",
+            "fotoğraf", "sinema", "tiyatro", "bale", "opera", "dans", "mimari", "grafiti", "kolaj",
+            "origami", "vitray", "mozaik", "nakış", "dokuma", "örme", "desen", "çizim", "eskiz",
+            "perspektif", "kompozisyon", "portre", "peyzaj", "natürmort", "soyut", "empresyonizm",
+            "ekspresyonizm", "kübizm", "sürrealizm", "minimalizm", "pop art", "enstalasyon"
+        ],
+        "bilim": [
+            "fizik", "kimya", "biyoloji", "matematik", "astronomi", "jeoloji", "meteoroloji",
+            "paleontoloji", "arkeoloji", "antropoloji", "sosyoloji", "psikoloji", "nöroloji",
+            "kardiyoloji", "dermatoloji", "ortopedi", "pediatri", "genetik", "ekoloji", "zooloji",
+            "botanik", "mikrobiyoloji", "biyokimya", "biyoteknoloji", "nanoteknoloji", "robotik",
+            "yapay zeka", "kuantum", "termodinamik", "elektromanyetizma", "aerodinamik", "hidrolik"
+        ],
+        "teknoloji": [
+            "bilgisayar", "yazılım", "donanım", "internet", "wifi", "bluetooth", "algoritma",
+            "programlama", "veritabanı", "sunucu", "bulut", "siber güvenlik", "kripto", "blockchain",
+            "yapay zeka", "makine öğrenmesi", "derin öğrenme", "sanal gerçeklik", "artırılmış gerçeklik",
+            "robotik", "otomasyon", "nesnelerin interneti", "büyük veri", "veri madenciliği",
+            "mikroişlemci", "yarı iletken", "entegre devre", "sensör", "drone", "hologram"
+        ],
+        "coğrafya": [
+            "kıta", "ülke", "şehir", "başkent", "eyalet", "bölge", "ada", "yarımada", "boğaz",
+            "körfez", "delta", "vadi", "plato", "ova", "çöl", "kutup", "ekvator", "meridyen",
+            "paralel", "enlem", "boylam", "krater", "kanyon", "lagün", "fiyort", "step", "tundra",
+            "tayga", "savan", "muson", "okyanus", "deniz", "göl", "nehir", "çağlayan", "buzul"
+        ],
+        "tarih": [
+            "antik çağ", "orta çağ", "rönesans", "reform", "aydınlanma", "sanayi devrimi",
+            "cumhuriyet", "demokrasi", "imparatorluk", "krallık", "hanedanlık", "devrim",
+            "savaş", "barış", "antlaşma", "ittifak", "fetih", "kuşatma", "zafer", "yenilgi",
+            "medeniyet", "kültür", "gelenek", "görenek", "miras", "arkeoloji", "kazı", "kalıntı"
+        ],
+        "mimari": [
+            "saray", "kale", "cami", "kilise", "katedral", "şato", "köşk", "konak", "villa",
+            "apartman", "gökdelen", "köprü", "tünel", "baraj", "liman", "istasyon", "havalimanı",
+            "stadyum", "arena", "müze", "kütüphane", "okul", "hastane", "fabrika", "atölye",
+            "çarşı", "pazar", "han", "hamam", "kervansaray", "medrese", "külliye", "türbe"
+        ],
+        "ulaşım": [
+            "araba", "otobüs", "kamyon", "tır", "motosiklet", "bisiklet", "tren", "tramvay",
+            "metro", "uçak", "helikopter", "gemi", "vapur", "feribot", "kayık", "sandal", "yelkenli",
+            "submarine", "roket", "uzay mekiği", "zeplin", "balon", "teleferik", "yürüyen merdiven",
+            "asansör", "monoray", "troleybüs", "füniküler", "segway", "scooter", "hover"
+        ],
+        "bitki_türleri": [
+            "çam", "meşe", "kayın", "gürgen", "ıhlamur", "akasya", "söğüt", "kavak", "çınar", "palmiye",
+            "zeytin", "incir", "elma", "armut", "kiraz", "şeftali", "kayısı", "erik", "dut", "nar",
+            "üzüm", "kivi", "muz", "ananas", "portakal", "mandalina", "limon", "greyfurt", "avokado",
+            "buğday", "arpa", "yulaf", "çavdar", "mısır", "pirinç", "mercimek", "nohut", "fasulye",
+            "bezelye", "bakla", "soğan", "sarımsak", "pırasa", "havuç", "patates", "domates", "biber",
+            "patlıcan", "kabak", "salatalık", "marul", "ıspanak", "lahana", "karnabahar", "brokoli",
+            "bamya", "kereviz", "turp", "şalgam", "enginar", "kuşkonmaz", "semizotu", "roka", "tere",
+            "nane", "fesleğen", "kekik", "biberiye", "adaçayı", "lavanta", "papatya", "gül", "lale",
+            "sümbül", "zambak", "orkide", "menekşe", "begonya", "sardunya", "kaktüs", "sukulent"
+        ],
+        "hastalıklar": [
+            "grip", "nezle", "soğuk algınlığı", "bronşit", "zatürre", "astım", "alerji", "migren",
+            "baş ağrısı", "diş ağrısı", "bel ağrısı", "romatizma", "artrit", "osteoporoz", "diyabet",
+            "tansiyon", "kolesterol", "kalp yetmezliği", "ritim bozukluğu", "damar tıkanıklığı",
+            "gastrit", "ülser", "reflü", "kabızlık", "ishal", "apandisit", "safra kesesi", "böbrek taşı",
+            "idrar yolu enfeksiyonu", "prostat", "tiroit", "anemi", "lösemi", "lenfoma", "tümör",
+            "katarakt", "glokom", "miyop", "hipermetrop", "astigmat", "şaşılık", "işitme kaybı",
+            "vertigo", "epilepsi", "alzheimer", "parkinson", "depresyon", "anksiyete", "uykusuzluk"
+        ],
+        "hukuki_terimler": [
+            "kanun", "yasa", "tüzük", "yönetmelik", "anayasa", "mahkeme", "hakim", "savcı", "avukat",
+            "dava", "duruşma", "karar", "temyiz", "itiraz", "delil", "tanık", "şahit", "bilirkişi",
+            "müvekkil", "sanık", "mağdur", "davacı", "davalı", "suç", "ceza", "hapis", "para cezası",
+            "tutuklama", "gözaltı", "beraat", "mahkumiyet", "hüküm", "infaz", "adli sicil", "sabıka",
+            "vekaletname", "dilekçe", "ihtarname", "sözleşme", "protokol", "tapu", "miras", "vasiyet",
+            "veraset", "nafaka", "tazminat", "haciz", "ipotek", "rehin", "kefalet", "borç", "alacak"
+        ],
+        "ekonomi": [
+            "para", "banka", "kredi", "borsa", "hisse", "tahvil", "döviz", "altın", "faiz", "enflasyon",
+            "deflasyon", "devalüasyon", "revalüasyon", "bütçe", "gelir", "gider", "kar", "zarar",
+            "vergi", "kdv", "stopaj", "gümrük", "ithalat", "ihracat", "dış ticaret", "iç ticaret",
+            "yatırım", "tasarruf", "mevduat", "çek", "senet", "kredi kartı", "banka kartı", "pos",
+            "atm", "eft", "havale", "swift", "iban", "borç", "alacak", "bilanço", "muhasebe",
+            "denetim", "mali müşavir", "yeminli mali müşavir", "broker", "trader", "analist"
+        ],
+        "mobilya": [
+            "koltuk", "kanepe", "sandalye", "tabure", "sehpa", "masa", "yemek masası", "çalışma masası",
+            "bilgisayar masası", "dolap", "gardırop", "şifonyer", "komodin", "kitaplık", "vitrin",
+            "konsol", "büfe", "tv ünitesi", "yatak", "baza", "ranza", "beşik", "portmanto", "ayakkabılık",
+            "vestiyer", "banyo dolabı", "mutfak dolabı", "tezgah", "ada mutfak", "bar taburesi"
+        ],
+        "kıyafet": [
+            "gömlek", "pantolon", "tişört", "kazak", "hırka", "ceket", "mont", "palto", "kaban",
+            "yelek", "elbise", "etek", "şort", "tayt", "eşofman", "pijama", "gecelik", "iç çamaşırı",
+            "çorap", "ayakkabı", "bot", "çizme", "terlik", "sandalet", "spor ayakkabı", "şapka",
+            "bere", "atkı", "eldiven", "kemer", "kravat", "papyon", "fular", "şal", "eşarp", "bone",
+            "mayo", "bikini", "takım elbise", "smokin", "gelinlik", "damatlık", "üniforma", "önlük"
+        ],
+        "spor_ekipmanları": [
+            "top", "raket", "file", "kale", "pota", "saha", "kort", "havuz", "ring", "tatami",
+            "halter", "dambıl", "ağırlık", "koşu bandı", "bisiklet", "eliptik", "kürek", "kayak",
+            "snowboard", "paten", "kaykay", "sörf tahtası", "dalış ekipmanı", "tırmanış malzemesi",
+            "kask", "dizlik", "dirseklik", "koruyucu", "forma", "krampon", "tekmelik", "eldiven",
+            "bone", "gözlük", "şnorkel", "palet", "ok", "yay", "hedef tahtası", "mat", "atlama ipi"
+        ],
+        "müzik_terimleri": [
+            "nota", "porte", "anahtar", "ölçü", "tempo", "ritim", "melodi", "armoni", "akor",
+            "gam", "dizi", "oktav", "ton", "majör", "minör", "diyez", "bemol", "natürel",
+            "susturucu", "metronom", "akort", "entonasyon", "vibrato", "legato", "staccato",
+            "crescendo", "diminuendo", "fortissimo", "pianissimo", "allegro", "andante", "adagio"
+        ],
+        "sinema": [
+            "film", "senaryo", "yönetmen", "yapımcı", "oyuncu", "kamera", "kurgu", "montaj",
+            "ses", "ışık", "dekor", "kostüm", "makyaj", "efekt", "dublaj", "altyazı", "jenerik",
+            "fragman", "vizyon", "gişe", "bilet", "salon", "perde", "projeksiyon", "stüdyo", "set",
+            "sahne", "plan", "çekim", "kadraj", "zoom", "fokus", "klaket", "reji", "cast", "figüran"
+        ],
+        "edebiyat": [
+            "roman", "hikaye", "şiir", "deneme", "makale", "eleştiri", "biyografi", "otobiyografi",
+            "anı", "günlük", "mektup", "fıkra", "masal", "destan", "efsane", "mizah", "hiciv",
+            "trajedi", "komedi", "dram", "senaryo", "tiyatro", "monolog", "diyalog", "paragraf",
+            "cümle", "kelime", "harf", "nokta", "virgül", "ünlem", "soru işareti", "üç nokta"
+        ],
+        "askeri_terimler": [
+            "ordu", "donanma", "hava kuvvetleri", "kara kuvvetleri", "deniz kuvvetleri",
+            "general", "amiral", "albay", "yarbay", "binbaşı", "yüzbaşı", "üsteğmen", "teğmen",
+            "astsubay", "çavuş", "onbaşı", "er", "asker", "manga", "takım", "bölük", "tabur",
+            "alay", "tümen", "kolordu", "ordu", "karargah", "üs", "garnizon", "kışla", "nöbet",
+            "devriye", "keşif", "tatbikat", "manevra", "strateji", "taktik", "operasyon", "harekat",
+            "seferberlik", "mühimmat", "cephane", "silah", "mermi", "bomba", "füze", "tank",
+            "zırhlı araç", "savaş uçağı", "helikopter", "denizaltı", "fırkateyn", "kruvazör"
+        ],
+        "dini_terimler": [
+            "ibadet", "dua", "namaz", "oruç", "zekat", "hac", "umre", "kurban", "sadaka", "fitre",
+            "cami", "mescit", "minare", "mihrap", "minber", "kürsü", "vaaz", "hutbe", "cemaat",
+            "imam", "müezzin", "vaiz", "müftü", "şeyh", "derviş", "tekke", "zaviye", "türbe",
+            "abdest", "gusül", "teyemmüm", "secde", "rüku", "tesbih", "zikir", "tevbe", "şükür",
+            "sabır", "tevekkül", "hidayet", "rahmet", "bereket", "helal", "haram", "sevap", "günah"
+        ],
+        "mitoloji": [
+            "tanrı", "tanrıça", "kahraman", "efsane", "destan", "mit", "söylence", "yarı tanrı",
+            "titan", "dev", "ejderha", "pegasus", "unicorn", "feniks", "sfenks", "grifon", "kentaur",
+            "minotaur", "siren", "nimf", "peri", "cin", "melek", "şeytan", "iblis", "demon",
+            "olimpos", "valhalla", "asgard", "hades", "cehennem", "cennet", "araf", "kıyamet",
+            "kader", "yazgı", "kehanet", "büyü", "sihir", "tılsım", "muska", "nazarlık"
+        ],
+        "uzay_astronomi": [
+            "güneş", "ay", "dünya", "merkür", "venüs", "mars", "jüpiter", "satürn", "uranüs",
+            "neptün", "plüton", "asteroid", "kuyruklu yıldız", "meteor", "galaksi", "samanyolu",
+            "yıldız", "gezegen", "uydu", "takımyıldız", "nebula", "kara delik", "süpernova",
+            "teleskop", "gözlemevi", "uzay istasyonu", "uzay mekiği", "roket", "uydu", "astronot",
+            "kozmonot", "yörünge", "eksen", "ekvator", "kutup", "atmosfer", "yerçekimi", "radyasyon"
+        ],
+        "kimyasal_elementler": [
+            "hidrojen", "helyum", "lityum", "berilyum", "bor", "karbon", "azot", "oksijen", "flor",
+            "neon", "sodyum", "magnezyum", "alüminyum", "silisyum", "fosfor", "kükürt", "klor",
+            "argon", "potasyum", "kalsiyum", "skandiyum", "titanyum", "vanadyum", "krom", "mangan",
+            "demir", "kobalt", "nikel", "bakır", "çinko", "galyum", "germanyum", "arsenik", "selenyum",
+            "brom", "kripton", "rubidyum", "stronsiyum", "itriyum", "zirkonyum", "niyobyum", "molibden"
+        ],
+        "matematik_terimleri": [
+            "sayı", "rakam", "toplama", "çıkarma", "çarpma", "bölme", "kesir", "ondalık", "üs",
+            "kök", "logaritma", "türev", "integral", "limit", "fonksiyon", "denklem", "eşitlik",
+            "eşitsizlik", "üçgen", "kare", "dikdörtgen", "daire", "küp", "küre", "silindir",
+            "prizma", "piramit", "açı", "derece", "radyan", "koordinat", "vektör", "matris",
+            "determinant", "olasılık", "istatistik", "ortalama", "medyan", "mod", "standart sapma"
+        ],
+        "yemek_tarifleri": [
+            "çorba", "salata", "pilav", "makarna", "börek", "dolma", "sarma", "kebap", "köfte",
+            "kızartma", "haşlama", "ızgara", "güveç", "türlü", "kapama", "yahni", "kavurma",
+            "karnıyarık", "imambayıldı", "musakka", "mantı", "lahmacun", "pide", "pizza",
+            "hamburger", "sandviç", "tost", "omlet", "menemen", "sucuklu yumurta", "kurabiye",
+            "kek", "pasta", "börek", "poğaça", "simit", "baklava", "kadayıf", "künefe", "helva"
+        ],
+        "araç_parçaları": [
+            "motor", "şanzıman", "debriyaj", "fren", "direksiyon", "vites", "aks", "diferansiyel",
+            "süspansiyon", "amortisör", "yay", "tekerlek", "jant", "lastik", "egzoz", "radyatör",
+            "akü", "alternatör", "marş motoru", "buji", "distribütör", "karbüratör", "enjektör",
+            "piston", "krank mili", "kam mili", "supap", "conta", "filtre", "kayış", "zincir",
+            "rulman", "yatak", "keçe", "sensör", "sigorta", "röle", "far", "stop lambası", "silecek"
+        ],
+        "moda_tekstil": [
+            "kumaş", "iplik", "yün", "pamuk", "keten", "ipek", "polyester", "kadife", "deri", "süet",
+            "dantel", "tül", "saten", "şifon", "polar", "kot", "gabardin", "kaşmir", "tafta", "organze",
+            "fermuar", "düğme", "çıtçıt", "toka", "kurdele", "fiyonk", "boncuk", "payet", "nakış",
+            "dikiş", "ölçü", "kalıp", "prova", "manken", "podyum", "koleksiyon", "tasarım", "marka",
+            "butik", "atölye", "terzi", "makas", "mezura", "iğne", "toplu iğne", "teyel", "overlok"
+        ],
+        "müzik_türleri": [
+            "pop", "rock", "jazz", "blues", "klasik", "opera", "rap", "hip hop", "elektronik", "metal",
+            "folk", "country", "reggae", "latin", "funk", "soul", "r&b", "punk", "indie", "alternatif",
+            "arabesk", "fantezi", "sanat müziği", "halk müziği", "tasavvuf", "ilahi", "özgün müzik",
+            "protest", "etnik müzik", "fusion", "ambient", "techno", "house", "trance", "dubstep",
+            "grunge", "heavy metal", "death metal", "black metal", "progressive", "psychedelic"
+        ],
+        "dans_türleri": [
+            "bale", "modern dans", "çağdaş dans", "hip hop", "break dance", "vals", "tango", "salsa",
+            "cha cha", "rumba", "samba", "paso doble", "jive", "swing", "charleston", "zeybek",
+            "horon", "halay", "çiftetelli", "roman havası", "kafkas", "flamenko", "tap dans",
+            "jazz dans", "akrobatik dans", "sokak dansı", "latin dansları", "folk dans", "tribal"
+        ],
+        "oyun_terimleri": [
+            "strateji", "macera", "aksiyon", "rol yapma", "simülasyon", "spor", "yarış", "platform",
+            "bulmaca", "kart oyunu", "masa oyunu", "zeka oyunu", "karakter", "seviye", "puan",
+            "skor", "can", "güç", "enerji", "silah", "zırh", "eşya", "envanter", "görev", "harita",
+            "kontrol", "grafik", "ses", "müzik", "efekt", "animasyon", "fizik motoru", "yapay zeka",
+            "çok oyunculu", "tek oyunculu", "çevrimiçi", "çevrimdışı", "sunucu", "istemci", "mod"
+        ],
+        "sosyal_medya": [
+            "profil", "hesap", "paylaşım", "gönderi", "beğeni", "yorum", "etiket", "hashtag",
+            "takipçi", "takip", "mesaj", "bildirim", "hikaye", "durum", "canlı yayın", "akış",
+            "zaman tüneli", "anket", "emoji", "gif", "sticker", "konum", "mention", "retweet",
+            "feed", "timeline", "trend", "viral", "influencer", "içerik üretici", "blog", "vlog"
+        ],
+        "internet_terimleri": [
+            "tarayıcı", "arama motoru", "web sitesi", "alan adı", "sunucu", "hosting", "bağlantı",
+            "indirme", "yükleme", "çerez", "önbellek", "güvenlik duvarı", "antivirüs", "spam",
+            "e-posta", "şifre", "kullanıcı adı", "profil", "ayarlar", "gizlilik", "yedekleme",
+            "bulut depolama", "stream", "podcast", "RSS", "HTML", "CSS", "JavaScript", "API"
+        ],
+        "programlama_terimleri": [
+            "değişken", "fonksiyon", "sınıf", "nesne", "metot", "dizi", "döngü", "koşul",
+            "arayüz", "kütüphane", "framework", "debug", "hata ayıklama", "derleme", "yorumlama",
+            "algoritma", "kod", "syntax", "backend", "frontend", "database", "API", "git", "versiyon",
+            "branch", "commit", "merge", "pull request", "deployment", "test", "optimizasyon"
+        ],
+        "grafik_tasarım": [
+            "piksel", "vektör", "katman", "maske", "filtre", "fırça", "kalem", "seçim", "kırpma",
+            "renk paleti", "ton", "kontrast", "parlaklık", "doygunluk", "opaklık", "gradient",
+            "doku", "pattern", "logo", "tipografi", "font", "punto", "hizalama", "grid", "mizanpaj",
+            "baskı", "CMYK", "RGB", "DPI", "çözünürlük", "render", "mockup", "wireframe"
+        ],
+        "fotoğrafçılık": [
+            "diyafram", "enstantane", "ISO", "odak", "zoom", "pozlama", "beyaz dengesi", "flaş",
+            "tripod", "lens", "filtre", "sensör", "vizör", "raw", "jpeg", "kompozisyon", "kadraj",
+            "perspektif", "alan derinliği", "bokeh", "panning", "HDR", "panorama", "time-lapse",
+            "makro", "portre", "manzara", "stüdyo", "ışık", "softbox", "reflektör", "trigger"
+        ],
+        "mimari_terimler": [
+            "plan", "kesit", "görünüş", "perspektif", "ölçek", "kot", "aks", "modül", "strüktür",
+            "konstrüksiyon", "detay", "malzeme", "yalıtım", "tesisat", "havalandırma", "aydınlatma",
+            "akustik", "ergonomi", "restorasyon", "renovasyon", "peyzaj", "sürdürülebilirlik",
+            "ekolojik", "biyoklimatik", "prefabrik", "betonarme", "çelik", "ahşap", "kompozit"
+        ],
+        "iş_dünyası": [
+            "şirket", "firma", "holding", "yönetim", "organizasyon", "departman", "birim", "kadro",
+            "personel", "çalışan", "işveren", "yönetici", "müdür", "direktör", "koordinatör",
+            "uzman", "danışman", "asistan", "stajyer", "maaş", "prim", "ikramiye", "izin", "mesai",
+            "toplantı", "sunum", "rapor", "proje", "hedef", "strateji", "performans", "verimlilik",
+            "rekabet", "pazarlama", "satış", "müşteri", "tedarikçi", "bayi", "distribütör", "franchise"
+        ],
+        "finans": [
+            "banka", "borsa", "yatırım", "fon", "hisse", "tahvil", "bono", "döviz", "altın", "faiz",
+            "kredi", "ipotek", "sigorta", "poliçe", "risk", "portföy", "temettü", "kar payı", "gelir",
+            "gider", "bütçe", "maliyet", "fiyat", "değer", "varlık", "borç", "alacak", "sermaye",
+            "likidite", "volatilite", "enflasyon", "deflasyon", "devalüasyon", "revalüasyon"
+        ],
+        "tıbbi_terimler": [
+            "teşhis", "tedavi", "ameliyat", "muayene", "tahlil", "röntgen", "ultrason", "tomografi",
+            "biyopsi", "endoskopi", "anestezi", "rehabilitasyon", "fizyoterapi", "psikoterapi",
+            "ilaç", "aşı", "serum", "antibiyotik", "vitamin", "mineral", "hormon", "enzim", "protein",
+            "antikor", "virüs", "bakteri", "parazit", "enfeksiyon", "enflamasyon", "ödem", "apse"
+        ],
+        "eğitim": [
+            "okul", "üniversite", "fakülte", "bölüm", "sınıf", "ders", "müfredat", "program",
+            "öğrenci", "öğretmen", "profesör", "doçent", "asistan", "akademisyen", "eğitmen",
+            "sınav", "test", "ödev", "proje", "tez", "diploma", "sertifika", "burs", "staj",
+            "seminer", "konferans", "workshop", "laboratuvar", "kütüphane", "araştırma", "yayın"
+        ],
+        "psikoloji": [
+            "bilinç", "bilinçaltı", "kişilik", "karakter", "davranış", "tutum", "algı", "öğrenme",
+            "hafıza", "zeka", "duygu", "düşünce", "motivasyon", "stres", "kaygı", "depresyon",
+            "travma", "fobi", "obsesyon", "kompülsiyon", "empati", "sempati", "içgörü", "savunma",
+            "ego", "id", "süperego", "arketip", "kompleks", "sendrom", "terapi", "danışmanlık"
+        ],
+        "sosyoloji": [
+            "toplum", "kültür", "medeniyet", "gelenek", "görenek", "örf", "adet", "değer", "norm",
+            "sınıf", "tabaka", "statü", "rol", "kimlik", "aile", "evlilik", "akrabalık", "eğitim",
+            "ekonomi", "siyaset", "din", "ideoloji", "modernleşme", "küreselleşme", "göç", "kentleşme",
+            "nüfus", "demografi", "etnisite", "ırk", "cinsiyet", "yaş", "meslek", "eşitsizlik"
+        ],
+        "felsefe": [
+            "varlık", "bilgi", "gerçek", "hakikat", "doğru", "yanlış", "iyi", "kötü", "güzel",
+            "çirkin", "ahlak", "etik", "mantık", "metafizik", "epistemoloji", "ontoloji", "estetik",
+            "determinizm", "özgürlük", "sorumluluk", "bilinç", "zihin", "madde", "ruh", "tanrı",
+            "din", "inanç", "şüphe", "eleştiri", "analiz", "sentez", "tez", "antitez", "diyalektik"
+        ],
+        "politika": [
+            "devlet", "hükümet", "parlamento", "meclis", "bakanlık", "parti", "seçim", "oy",
+            "demokrasi", "cumhuriyet", "monarşi", "diktatörlük", "anayasa", "yasa", "kanun",
+            "hukuk", "adalet", "özgürlük", "eşitlik", "insan hakları", "vatandaşlık", "diplomasi",
+            "uluslararası ilişkiler", "savaş", "barış", "antlaşma", "ittifak", "propaganda"
+        ],
+        "medya": [
+            "gazete", "dergi", "televizyon", "radyo", "internet", "sosyal medya", "haber", "makale",
+            "röportaj", "yorum", "köşe yazısı", "editorial", "manşet", "başlık", "spot", "fotoğraf",
+            "video", "reklam", "ilan", "tanıtım", "kampanya", "rating", "tiraj", "izlenme", "erişim",
+            "hedef kitle", "kamuoyu", "medya planlaması", "içerik üretimi", "yayın politikası"
+        ]
+    },
+    "fiiller": {
+        "hareket": [
+            "yürümek", "koşmak", "zıplamak", "uçmak", "yüzmek", "tırmanmak", "düşmek", "kalkmak",
+            "oturmak", "yatmak", "dönmek", "gezmek", "dolaşmak", "kaymak", "atlamak", "sürünmek",
+            "emeklemek", "sendelemek", "tökezlemek", "yuvarlanmak", "sallanmak", "sıçramak", "kaymak",
+            "süzülmek", "dalmak", "çıkmak", "inmek", "binmek", "aşmak", "hoplamak", "zıplamak",
+            "koşturmak", "sekmek", "sekelemek", "debelenmek", "bükülmek", "eğilmek", "uzanmak",
+            "gerinmek", "yaslanmak", "dayanmak", "tutunmak", "asılmak", "savrulmak", "çevrilmek",
+            "yuvarlanmak"
+        ],
+        "günlük": [
+            "uyumak", "uyanmak", "yemek", "içmek", "giyinmek", "okumak", "yazmak", "konuşmak",
+            "dinlemek", "bakmak", "görmek", "duymak", "düşünmek", "anlamak", "öğrenmek",
+            "çalışmak", "dinlenmek", "temizlemek", "yıkamak", "pişirmek", "hazırlamak", "toplamak",
+            "düzenlemek", "aramak", "bulmak", "beklemek", "başlamak", "bitirmek", "unutmak", "hatırlamak",
+            "sevmek", "özlemek", "gülmek", "ağlamak", "şaşırmak", "korkmak", "inanmak", "güvenmek",
+            "denemek", "başarmak", "kaybetmek", "kazanmak", "paylaşmak", "yardım etmek", "istemek",
+            "sormak", "cevaplamak", "anlatmak", "açıklamak", "öğretmek", "planlamak", "hesaplamak",
+            "ölçmek", "tartmak", "karıştırmak", "ayırmak", "birleştirmek", "bağlamak", "çözmek"
+        ],
+        "zihinsel": [
+            "düşünmek", "hatırlamak", "unutmak", "öğrenmek", "anlamak", "kavramak", "çözmek",
+            "planlamak", "tasarlamak", "hayal etmek", "varsaymak", "tahmin etmek", "hesaplamak",
+            "değerlendirmek", "karşılaştırmak", "analiz etmek", "sentezlemek", "yorumlamak",
+            "araştırmak", "incelemek", "keşfetmek", "bulmak", "geliştirmek", "uyarlamak",
+            "ezberlemek", "tekrarlamak", "pekiştirmek", "odaklanmak", "yoğunlaşmak", "dikkate almak"
+        ]
+    },
+    "sıfatlar": {
+        "fiziksel": [
+            "büyük", "küçük", "uzun", "kısa", "kalın", "ince", "ağır", "hafif", "sıcak", "soğuk",
+            "yumuşak", "sert", "pürüzlü", "kaygan", "parlak", "mat", "yuvarlak", "köşeli",
+            "derin", "sığ", "geniş", "dar", "düz", "eğri", "pürüzsüz", "kırışık", "keskin", "kör",
+            "berrak", "bulanık", "temiz", "kirli", "ıslak", "kuru", "sert", "yumuşak", "taze", "bayat",
+            "ham", "olgun", "çiğ", "pişmiş", "dolu", "boş", "ağır", "hafif", "hızlı", "yavaş",
+            "güçlü", "zayıf", "sağlam", "kırılgan", "esnek", "katı", "sıvı", "gaz", "organik", "yapay"
+        ],
+        "duygusal": [
+            "mutlu", "üzgün", "neşeli", "kızgın", "sakin", "heyecanlı", "yorgun", "enerjik",
+            "sevimli", "güzel", "çirkin", "iyi", "kötü", "tatlı", "acı", "ekşi",
+            "sevinçli", "keyifli", "coşkulu", "huzurlu", "rahat", "gergin", "endişeli", "kaygılı",
+            "şaşkın", "meraklı", "ilgili", "istekli", "kararlı", "cesur", "korkak", "utangaç",
+            "özgüvenli", "alçakgönüllü", "kibirli", "kıskanç", "öfkeli", "sinirli", "sabırlı",
+            "sabırsız", "umutlu", "umutsuz", "şefkatli", "sevecen", "merhametli", "duygusal"
+        ],
+        "kişilik": [
+            "dürüst", "yalancı", "cömert", "cimri", "nazik", "kaba", "saygılı", "saygısız",
+            "çalışkan", "tembel", "düzenli", "dağınık", "dikkatli", "dikkatsiz", "sorumluluk sahibi",
+            "sorumsuz", "yardımsever", "bencil", "hoşgörülü", "önyargılı", "açık fikirli", "inatçı",
+            "uyumlu", "geçimsiz", "girişken", "çekingen", "konuşkan", "sessiz", "eğlenceli", "sıkıcı"
+        ]
+    },
+    "zarflar": [
+        "hızlı", "yavaş", "sessizce", "gürültülü", "nazikçe", "sertçe", "dikkatli", "özensiz",
+        "erken", "geç", "şimdi", "sonra", "bugün", "yarın", "dün", "yakında", "uzakta",
+        "aniden", "yavaşça", "hızlıca", "dikkatle", "özenle", "rastgele", "düzenli", "sürekli",
+        "seyrek", "sık sık", "ara sıra", "nadiren", "genellikle", "daima", "asla", "kesinlikle",
+        "muhtemelen", "belki", "neredeyse", "tamamen", "kısmen", "özellikle", "bilhassa",
+        "tekrar", "yeniden", "birlikte", "ayrı ayrı", "karşılıklı", "sırayla", "ardı ardına"
+    ]
+} 
