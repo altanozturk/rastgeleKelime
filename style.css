@@ -611,4 +611,104 @@ h2 {
     background-color: #40c057;  /* Hover'da daha koyu yeşil */
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(81, 207, 102, 0.4);  /* Daha belirgin yeşil gölge */
+}
+
+.game-end-content {
+    text-align: center;
+    padding: 2rem;
+    max-width: 400px;
+}
+
+.confetti-container {
+    margin-bottom: 1.5rem;
+}
+
+.trophy {
+    font-size: 4rem;
+    animation: bounceIn 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.final-scores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team-final-score {
+    text-align: center;
+}
+
+.team-final-score h3 {
+    color: #2d3436;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.team-final-score p {
+    color: #6c5ce7;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.score-divider {
+    font-size: 2rem;
+    color: #b2bec3;
+}
+
+#winnerTitle {
+    color: #6c5ce7;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#newGameButton {
+    background-color: #51cf66;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+}
+
+#newGameButton:hover {
+    background-color: #40c057;
+    transform: translateY(-2px);
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Mobil için düzenleme */
+@media (max-width: 480px) {
+    .game-end-content {
+        padding: 1.5rem;
+    }
+    
+    .trophy {
+        font-size: 3rem;
+    }
+    
+    .final-scores {
+        padding: 1rem;
+        gap: 1rem;
+    }
+    
+    .team-final-score p {
+        font-size: 2rem;
+    }
 } 

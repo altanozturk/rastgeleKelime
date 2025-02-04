@@ -147,24 +147,39 @@ function endTurn() {
     
     // Oyun bitti mi kontrol et
     if (currentRound >= totalRounds) {
-        // Oyun bitti
-        const wordElement = document.getElementById('word');
-        const startButton = document.getElementById('startButton');
-        const restartButton = document.getElementById('restartButton');
+        const gameEndModal = document.getElementById('gameEndModal');
+        const winnerTitle = document.getElementById('winnerTitle');
+        const teamAFinalName = document.getElementById('teamAFinalName');
+        const teamBFinalName = document.getElementById('teamBFinalName');
+        const teamAFinalScore = document.getElementById('teamAFinalScore');
+        const teamBFinalScore = document.getElementById('teamBFinalScore');
+        
+        // Takım isimlerini ve skorları güncelle
+        teamAFinalName.textContent = teamAName;
+        teamBFinalName.textContent = teamBName;
+        teamAFinalScore.textContent = scoreA;
+        teamBFinalScore.textContent = scoreB;
         
         // Kazananı belirle
-        let winnerMessage;
         if (scoreA > scoreB) {
-            winnerMessage = `Oyun Bitti!\n${teamAName} kazandı! (${scoreA}-${scoreB})`;
+            winnerTitle.textContent = `Tebrikler ${teamAName}!`;
         } else if (scoreB > scoreA) {
-            winnerMessage = `Oyun Bitti!\n${teamBName} kazandı! (${scoreA}-${scoreB})`;
+            winnerTitle.textContent = `Tebrikler ${teamBName}!`;
         } else {
-            winnerMessage = `Oyun Bitti!\nBerabere! (${scoreA}-${scoreB})`;
+            winnerTitle.textContent = 'Berabere!';
         }
         
-        wordElement.textContent = winnerMessage;
-        startButton.style.display = 'none';
-        restartButton.style.display = 'inline-block'; // Yeniden başlat butonunu göster
+        // Modalı göster
+        gameEndModal.style.display = 'flex';
+        
+        // Yeni oyun butonuna event listener ekle
+        document.getElementById('newGameButton').addEventListener('click', () => {
+            gameEndModal.style.display = 'none';
+            document.querySelector('.container').style.display = 'none';
+            document.getElementById('welcomeScreen').style.display = 'flex';
+            resetGame();
+        });
+        
         return;
     }
     
@@ -201,6 +216,39 @@ function startGame() {
     startTimer();
     updateTeamDisplay();
     getNewWord();
+}
+
+// Oyunu sıfırlama fonksiyonu
+function resetGame() {
+    // Form inputlarını sıfırla
+    document.getElementById('teamAName').value = '';
+    document.getElementById('teamBName').value = '';
+    document.getElementById('roundsInput').value = '3';
+    
+    // Süre seçimini varsayılana döndür
+    const timeOptions = document.querySelectorAll('.time-option');
+    timeOptions.forEach(opt => opt.classList.remove('selected'));
+    document.querySelector('[data-seconds="60"]').classList.add('selected');
+    selectedTime = 60;
+    
+    // Diğer oyun değişkenlerini sıfırla
+    scoreA = 0;
+    scoreB = 0;
+    currentRound = 0;
+    totalRounds = 0;
+    gameStarted = false;
+    currentTeam = 'A';
+    
+    // Timer'ı sıfırla
+    clearInterval(timerInterval);
+    timeLeft = selectedTime;
+    updateTimer();
+    
+    // Input border renklerini normale döndür
+    const inputs = document.querySelectorAll('.team-input input, .rounds-input input');
+    inputs.forEach(input => {
+        input.style.borderColor = 'rgba(108, 92, 231, 0.2)';
+    });
 }
 
 // Event Listeners
