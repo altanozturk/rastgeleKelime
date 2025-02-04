@@ -79,23 +79,37 @@ function startTimer() {
 function initializeGame() {
     const teamAInput = document.getElementById('teamAName');
     const teamBInput = document.getElementById('teamBName');
+    const roundsInput = document.getElementById('roundsInput');
     
     // Boş input kontrolü
-    if (!teamAInput.value.trim() || !teamBInput.value.trim()) {
-        // Input'ları kırmızı yap ve uyarı ver
-        if (!teamAInput.value.trim()) {
-            teamAInput.style.borderColor = '#ff6b6b';
-            teamAInput.classList.add('shake');
-            setTimeout(() => teamAInput.classList.remove('shake'), 500);
-        }
-        if (!teamBInput.value.trim()) {
-            teamBInput.style.borderColor = '#ff6b6b';
-            teamBInput.classList.add('shake');
-            setTimeout(() => teamBInput.classList.remove('shake'), 500);
-        }
-        return; // Fonksiyonu sonlandır
+    let hasError = false;
+    
+    if (!teamAInput.value.trim()) {
+        teamAInput.style.borderColor = '#ff6b6b';
+        teamAInput.classList.add('shake');
+        setTimeout(() => teamAInput.classList.remove('shake'), 500);
+        hasError = true;
     }
     
+    if (!teamBInput.value.trim()) {
+        teamBInput.style.borderColor = '#ff6b6b';
+        teamBInput.classList.add('shake');
+        setTimeout(() => teamBInput.classList.remove('shake'), 500);
+        hasError = true;
+    }
+    
+    if (!roundsInput.value || roundsInput.value < 1) {
+        roundsInput.style.borderColor = '#ff6b6b';
+        roundsInput.classList.add('shake');
+        setTimeout(() => roundsInput.classList.remove('shake'), 500);
+        hasError = true;
+    }
+    
+    if (hasError) {
+        return; // Hata varsa fonksiyonu sonlandır
+    }
+    
+    // Hata yoksa oyunu başlat
     teamAName = teamAInput.value.trim();
     teamBName = teamBInput.value.trim();
     
